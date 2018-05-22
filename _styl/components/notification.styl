@@ -5,13 +5,13 @@
 --------------------------------------------------------------------*/
 
 .message
-  margin-bottom: $spacing-base
   background-image: url('../images/notification-icon.svg')
   background-repeat: no-repeat
   background-position: 30px center
   background-size: 34px 30px
-  text-align: center
+  padding-left: $spacing-base*2
 
   @media screen and (max-width: $breakpoint-tablet)
     background-image: none
     font-size: 14px
+    padding-left: $ui-padding-spaced 
