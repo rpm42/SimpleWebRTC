@@ -20,7 +20,7 @@
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-modernizr": "^1.0.2",
     "jstransformer-markdown-it": "^2.1.0",
-    "yeticss": "^7.3.0"
+    "yeticss": "^7.4.1"
   },
   "dependencies": {
     "grunt-contrib-connect": "^1.0.2",
