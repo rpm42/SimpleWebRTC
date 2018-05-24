@@ -18,21 +18,18 @@ block content
       h2 Use Edge's ORTC API and the WebRTC APIs in Chrome and Firefox to make cross-browser conference calls
 
       #requirements
-      p
-        | To use this demo, you'll need the most recent version of the Edge browser, Chrome or Firefox , and a microphone attached to your Windows 10 device.
+      p To use this demo, you'll need the most recent version of the Edge browser, Chrome or Firefox , and a microphone attached to your Windows 10 device.
       #supportWarning.block-note--error
-        p
-          | Warning - Your browser does not support the ORTC or WebRTC APIs. Please switch to a PC with a recent version of Windows 10 and try again.
+        p Warning - Your browser does not support the ORTC or WebRTC APIs. Please switch to a PC with a recent version of Windows 10 and try again.
       #microphoneWarning.block-note--error
-        p
-          | Error - we can't find a microphone attached to your PC. Please switch to a PC with a microphone attached and try again.
+        p Error - we can't find a microphone attached to your PC. Please switch to a PC with a microphone attached and try again.
       #roomContainer.cf
         h4#subtitle
         form#createRoom
           button.button(disabled='', type='submit') Create conference
         .peerContainer.local
           .local-details
-            input#nickInput(placeholder='Add your name')
+            input#nickInput(placeholder='Add your name', class='form-input')
             audio#localAudio(controls='', oncontextmenu='return false;', disabled='')
             img#snapshot.avatar(src='/images/avatar-default.png')
             video#snapshotvideo.avatar
@@ -40,7 +37,7 @@ block content
             // add class of 'muted' when so
             a.button.button-small.button-mute Mute
           .local-controls
-            button#snapshotButton.button.button-small Take a snapshot
+            button#snapshotButton.button Take a snapshot
       #remotes
 
       h3 How it works
