@@ -18,12 +18,12 @@ block content
       h2 You can build cool stuff with WebRTC in five minutes.
       h3#title Start a room
       form#createRoom
-        input#sessionInput
-        button(disabled='', type='submit') Create it!
+        input#sessionInput.form-input
+        button(disabled='', type='submit', class='button button-approve') Create it!
       p#subTitle
       div
-        button#screenShareButton
-        span (https required for screensharing to work)
+        p: button#screenShareButton.button
+        p https required for screen sharing to work
       hr
       .videoContainer
         video#localVideo(style='height: 150px;', oncontextmenu='return false;')
