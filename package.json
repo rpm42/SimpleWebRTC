@@ -3,19 +3,19 @@
   "version": "3.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andyet/SimpleWebRTC.git"
+    "url": "https://github.com/rpm42/SimpleWebRTC.git"
   },
   "main": "./src/simplewebrtc.js",
   "description": "World's easiest webrtc",
   "dependencies": {
+    "attachmediastream": "^2.0.0",
     "filetransfer": "^2.0.4",
     "localmedia": "^4.0.0",
+    "mockconsole": "0.0.1",
     "rtcpeerconnection": "^8.0.0",
-    "webrtcsupport": "^2.2.0",
-    "wildemitter": "^1.2.0",
     "socket.io-client": "1.3.7",
-    "attachmediastream": "^2.0.0",
-    "mockconsole": "0.0.1"
+    "webrtcsupport": "^2.2.0",
+    "wildemitter": "^1.2.0"
   },
   "devDependencies": {
     "browserify": "^13.1.0",
@@ -35,16 +35,7 @@
   "license": "MIT",
   "scripts": {
     "build": "node build.js",
-    "test-travis": "test/run-selenium",
-    "updateLatest": "./scripts/updateLatest.sh",
-    "lint": "jshint src",
-    "validate": "npm ls",
     "test-page": "echo \"open https://0.0.0.0:8443/test/\" && stupid-server -s -h 0.0.0.0",
     "test": "node test/selenium/index.js"
-  },
-  "pre-commit": [
-    "lint",
-    "validate"
-  ],
-  "false": {}
+  }
 }

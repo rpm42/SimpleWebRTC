@@ -1,0 +1,286 @@
+body {
+  font: 100 18px Roboto;
+  background-image: url("../img/bg.jpg");
+  background-size: cover; 
+  margin: 0;
+  padding: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.logo {
+  margin: 10px 0 0;
+  float: left;
+  font: 100 25px "RobotoMono-Thin";
+}
+
+nav {
+  float: right;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.logo > .p1 {
+  background: black;
+  color: white;
+  padding-right: 0px;
+  margin-right: 0px;
+  font: 100 25px 'RobotoMono-Thin';
+}
+.logo > .p2 {
+  font: 300 25px 'RobotoMono-Light';
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover1 {
+  color: white;
+  text-decoration: underline;
+}
+
+.title {
+  width: 100%;
+  margin: 60px auto 80px;
+  text-align: center;
+}
+
+.title a {
+  font: 100 34px Roboto;
+  padding: 5px 30px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .1);
+  transition: background .5s ease-out;
+}
+
+.title a:hover {
+  background: rgba(255, 255, 255, .5)
+}
+
+.title a:active {
+  color: white;
+  background: rgba(0, 0, 0, .4);
+  /* border-color: white; */
+}
+
+.main {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, .6);
+  padding-top: 20px;
+  border-top: 1px solid rgba(150, 150, 150, .9);
+  border-bottom: 1px solid rgba(150, 150, 150, .9);
+}
+
+.feature {
+  max-width: 700px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.feature .image {
+  /* padding-top: 20px; */
+  vertical-align: top;
+  width: 28%;
+  display: inline-block;
+  overflow: auto
+}
+
+.feature .text {
+  vertical-align: top;
+  width: 68%;
+  display: inline-block;
+}
+
+.feature:nth-child(1) {
+  left: -100px;
+  margin-bottom: -20px;
+}
+
+.feature:nth-child(2) {
+  right: -190px;
+  margin-bottom: -90px;
+}
+
+.feature:nth-child(3) {
+  left: -100px;
+  margin-bottom: 20px;
+}
+
+.feature:nth-child(4) {
+  right: -190px;
+  margin-bottom: -10px;
+}
+
+.feature:nth-child(5) {
+  left: -100px;
+  margin-bottom: 70px;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+.social {
+  vertical-align: top;
+  display: inline-block;
+  margin: 20px 10px 20px
+}
+
+.social .icon {
+  margin: 5px 3px;
+}
+
+.social .icon img {
+  width: 32px;
+}
+
+.phone {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.phone p {
+  margin: рx 0;
+  font-size: 16px;
+}
+
+.main2 {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.video {
+  position: relative;
+  display: block;
+  min-height: 420px;
+  width: 560px;
+  background: #444;
+  margin: 50px auto;
+}
+
+.video-mini {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 160px;
+  height: 120px;
+  background: white;
+  border: 1px solid white;
+}
+
+.comment {
+  display: block;
+  width: 320px;
+  height: 180px;
+  margin: 30px auto;
+  position: relative;
+  left: -120px;
+}
+
+.videoContainer {
+  position: relative;
+  width: 160px;
+  height: 120px;
+}
+
+.videoContainer2 {
+  position: relative;
+  width: 560px;
+  height: 420px;
+}
+
+.remotes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10
+}
+
+.videoContainer video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.videoContainer2 video {
+  position: absolute;
+  width: 560px;
+  height: 420px;
+}
+
+.volume_bar {
+  position: absolute;
+  width: 5px;
+  height: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #12acef;
+}
+
+.form {
+  width: 560px;
+  margin: 20px auto;
+}
+
+.form input {
+  border: 1px solid #333;
+  border-radius: 3px;
+  font: 300 25px/32px 'RobotoMono-Light';
+  background: rgba(255, 255, 255, .7)
+}
+
+.form button {
+  font: 100 21px Roboto;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .1);
+  transition: background .5s ease-out;
+}
+
+.form button:hover {
+  background: rgba(255, 255, 255, .5)
+}
+
+.form button:active {
+  color: white;
+  background: rgba(0, 0, 0, .4);
+  /* border-color: white; */
+}
